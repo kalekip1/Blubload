@@ -23,34 +23,5 @@ $query->bindColumn(5, $image, PDO::PARAM_LOB);
 
 $query->fetch(PDO::FETCH_BOUND);
 
-//echo $name;
-
-//die();
-
-//$queryResult = $query->fetch(PDO::FETCH_ASSOC);
-
-//list($name, $type, $size, $content) = $queryResult;
-
-//echo $queryResult[3];
-
-//foreach($queryResult as $item){
-//	echo $item.'<br /><br />';
-//}
-
-//header('Content-length: '.$size);
 header('Content-type: '.$type);
 echo $image;
-
-/*
-? >
-<html>
-	<head>
-		<title><?php echo $name; ?></title>
-	</head>
-	<body>
-		<?php
-		header('Content-type: '.$type);
-		echo $image;
-		?>
-	</body>
-</html>*/
