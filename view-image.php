@@ -9,8 +9,8 @@ if(!isset($_GET['id'])){
 
 //Get the file from database
 $query = "SELECT * 
-		  FROM {$conf->dbTPrefix}images 
-		  WHERE id = :id
+	  FROM {$conf->dbTPrefix}images 
+	  WHERE id = :id
 ";
 $query = $pdo->prepare($query);
 $query->bindValue(':id', $_GET['id']);
