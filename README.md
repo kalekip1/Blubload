@@ -8,3 +8,4 @@ Note: This is a basic start for making an image uploading service using PDO. Ima
 To-do:
 - More Object Oriënted
 - Adding more security: validating and encoding
+- Reading images with _GET should not be incremented by one. Bots will be able to iterate through every image by adding 1 to the current _GET
