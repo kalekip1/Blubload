@@ -1,11 +1,11 @@
 Blubload
 ========
 
-Upload images with PHP's PDO using BLOB.
+Upload images with PDO using BLOB.
 
-**Note:** This is a basic start for making an image uploading service using PDO. Images are directly saved in the database (BLOB). This is in no way ready to go for production.
+**Note:** This is a basic start for making an image uploading service using PDO. Images are directly saved in the database (BLOB). *This is in no way ready to go for production.*
 
 **To-do:**
-- More object oriënted
-- Adding more security: validating and encoding
-- Reading images with _GET should not be incremented by one. Bots will be able to iterate through every image by adding 1 to the current _GET
+- Improve object-oriented design
+- Improve security (validating, encoding, etc.)(!)
+- Reading images with one GET should not be possible. Bots will be able to iterate through every image by adding 1 to the current GET. A second parameter is suggested.
